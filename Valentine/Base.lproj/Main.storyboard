@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Valentine" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cake" translatesAutoresizingMaskIntoConstraints="NO" id="6pS-In-QE1">
+                                <rect key="frame" x="175" y="28" width="250" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015.02.14" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhX-tI-ocJ">
+                                <rect key="frame" x="257" y="503" width="86" height="20"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="30"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="Jje-KJ-f6p">
+                                <rect key="frame" x="108" y="531" width="385" height="41"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AND" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI0-3s-kO8">
+                                <rect key="frame" x="262" y="268" width="76" height="64"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Me" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-WV-Vjn">
+                                <rect key="frame" x="346" y="275" width="238" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CEf-AQ-ymF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7I-JO-zi0">
+                                <rect key="frame" x="16" y="275" width="238" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KSF-8y-A7B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jje-KJ-f6p" firstAttribute="top" secondItem="FhX-tI-ocJ" secondAttribute="bottom" constant="8" id="55m-Kr-AdI"/>
+                            <constraint firstItem="eI0-3s-kO8" firstAttribute="centerY" secondItem="dfH-WV-Vjn" secondAttribute="centerY" id="8jJ-EQ-1kw"/>
+                            <constraint firstAttribute="centerX" secondItem="FhX-tI-ocJ" secondAttribute="centerX" id="CGY-th-fpl"/>
+                            <constraint firstItem="dfH-WV-Vjn" firstAttribute="leading" secondItem="eI0-3s-kO8" secondAttribute="trailing" constant="8" id="GoE-OL-w02"/>
+                            <constraint firstItem="eI0-3s-kO8" firstAttribute="centerY" secondItem="z7I-JO-zi0" secondAttribute="centerY" id="Gtt-IT-bV8"/>
+                            <constraint firstAttribute="centerY" secondItem="eI0-3s-kO8" secondAttribute="centerY" id="J5p-kl-Zo3"/>
+                            <constraint firstItem="dfH-WV-Vjn" firstAttribute="top" secondItem="eI0-3s-kO8" secondAttribute="bottom" constant="12" id="KVD-v3-6v3"/>
+                            <constraint firstItem="z7I-JO-zi0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OVh-0b-o9c"/>
+                            <constraint firstAttribute="centerX" secondItem="Jje-KJ-f6p" secondAttribute="centerX" id="XIq-ED-lZ5"/>
+                            <constraint firstAttribute="centerX" secondItem="eI0-3s-kO8" secondAttribute="centerX" id="Zfu-JZ-m49"/>
+                            <constraint firstItem="dfH-WV-Vjn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gIF-8e-JUB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jje-KJ-f6p" secondAttribute="bottom" constant="28" id="gpI-oJ-z1W"/>
+                            <constraint firstItem="eI0-3s-kO8" firstAttribute="leading" secondItem="z7I-JO-zi0" secondAttribute="trailing" constant="8" id="hgn-gC-Lvn"/>
+                            <constraint firstAttribute="centerX" secondItem="6pS-In-QE1" secondAttribute="centerX" id="jHf-pj-dvF"/>
+                            <constraint firstItem="eI0-3s-kO8" firstAttribute="top" secondItem="z7I-JO-zi0" secondAttribute="bottom" constant="12" id="sSD-Sj-J62"/>
+                            <constraint firstItem="6pS-In-QE1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tNQ-mE-lGe"/>
+                            <constraint firstItem="z7I-JO-zi0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="v7s-rt-pul"/>
+                            <constraint firstItem="dfH-WV-Vjn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wmL-dY-v1A"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FhX-tI-ocJ" secondAttribute="bottom" constant="28" id="xFF-Vh-289"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="v7s-rt-pul"/>
+                                <exclude reference="sSD-Sj-J62"/>
+                                <exclude reference="KVD-v3-6v3"/>
+                                <exclude reference="gIF-8e-JUB"/>
+                                <exclude reference="xFF-Vh-289"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="Jje-KJ-f6p"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="xFF-Vh-289"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="v7s-rt-pul"/>
+                                <exclude reference="8jJ-EQ-1kw"/>
+                                <exclude reference="Gtt-IT-bV8"/>
+                                <exclude reference="hgn-gC-Lvn"/>
+                                <include reference="sSD-Sj-J62"/>
+                                <exclude reference="GoE-OL-w02"/>
+                                <include reference="KVD-v3-6v3"/>
+                                <include reference="gIF-8e-JUB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="267" y="462"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cake" width="250" height="277"/>
+        <image name="line" width="385" height="41"/>
+    </resources>
+</document>
